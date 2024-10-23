@@ -21,7 +21,6 @@ import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
-import product8 from './product8.jpg';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -3148,10 +3147,10 @@ export const contextMenuItems = [
 ];
 
 export const ecomPieChartData = [
-  { x: '2018', y: 18, text: '35%' },
-  { x: '2019', y: 18, text: '15%' },
-  { x: '2020', y: 18, text: '25%' },
-  { x: '2021', y: 18, text: '25%' },
+  { x: 'Kiddies', y: 18, text: '35%' },
+  { x: 'Teenagers', y: 18, text: '15%' },
+  { x: 'undergraduates', y: 18, text: '25%' },
+  { x: 'Adults', y: 18, text: '25%' },
 ];
 
 export const stackedChartData = [
