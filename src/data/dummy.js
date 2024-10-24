@@ -1,14 +1,23 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { 
+  AiOutlineCalendar, 
+  AiOutlineShoppingCart, 
+  // AiOutlineAreaChart, 
+  AiOutlineBarChart, 
+  // AiOutlineStock 
+} from 'react-icons/ai';
+import { FiHome, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+// import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { 
+  RiContactsLine, 
+  // RiStockLine 
+} from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
+// import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -60,6 +69,7 @@ export const kanbanGrid = [
     keyField: 'Close',
     allowToggle: true },
 ];
+
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
@@ -301,6 +311,7 @@ export const barCustomSeries = [
     },
   },
 ];
+
 export const colorMappingData = [
   [
     { x: 'Jan', y: 6.96 },
@@ -473,14 +484,13 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'home',
+        icon: <FiHome />,
       },
     ],
   },
-
   {
-    title: 'Pages',
+    title: 'Departments',
     links: [
       {
         name: 'orders',
@@ -497,7 +507,7 @@ export const links = [
     ],
   },
   {
-    title: 'Apps',
+    title: 'Tools',
     links: [
       {
         name: 'calendar',
@@ -511,23 +521,23 @@ export const links = [
         name: 'editor',
         icon: <FiEdit />,
       },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
+      // {
+      //   name: 'color-picker',
+      //   icon: <BiColorFill />,
+      // },
     ],
   },
   {
-    title: 'Charts',
+    title: 'Statistics',
     links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
+      // {
+      //   name: 'line',
+      //   icon: <AiOutlineStock />,
+      // },
+      // {
+      //   name: 'area',
+      //   icon: <AiOutlineAreaChart />,
+      // },
 
       {
         name: 'bar',
@@ -537,18 +547,18 @@ export const links = [
         name: 'pie',
         icon: <FiPieChart />,
       },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
+      // {
+      //   name: 'financial',
+      //   icon: <RiStockLine />,
+      // },
       {
         name: 'color-mapping',
         icon: <BsBarChart />,
       },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
+      // {
+      //   name: 'pyramid',
+      //   icon: <GiLouvrePyramid />,
+      // },
       {
         name: 'stacked',
         icon: <AiOutlineBarChart />,
