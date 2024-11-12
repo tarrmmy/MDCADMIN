@@ -1,23 +1,13 @@
 import React from 'react';
-import { 
-  AiOutlineCalendar, 
-  AiOutlineShoppingCart, 
-  // AiOutlineAreaChart, 
-  AiOutlineBarChart, 
-  // AiOutlineStock 
-} from 'react-icons/ai';
-import { FiHome, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-// import { BiColorFill } from 'react-icons/bi';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineBarChart } from 'react-icons/ai';
+import { FiHome, FiEdit, FiPieChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { BsKanban, BsBarChart, BsBriefcaseFill, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import { FaBookReader } from 'react-icons/fa';
 import { IoMdContacts } from 'react-icons/io';
-import { 
-  RiContactsLine, 
-  // RiStockLine 
-} from 'react-icons/ri';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { HiOutlineRefresh } from 'react-icons/hi';
+import { FaGraduationCap } from 'react-icons/fa6';
+import { RiContactsLine } from 'react-icons/ri';
+import { LuBaby } from 'react-icons/lu';
 import { TiTick } from 'react-icons/ti';
-// import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -251,18 +241,18 @@ export const areaCustomSeries = [
 
 export const barChartData = [
   [
-    { x: 'USA', y: 46 },
+    { x: 'USA', y: 96 },
     { x: 'GBR', y: 27 },
     { x: 'CHN', y: 26 },
   ],
   [
-    { x: 'USA', y: 37 },
+    { x: 'USA', y: 77 },
     { x: 'GBR', y: 23 },
     { x: 'CHN', y: 18 },
   ],
   [
     { x: 'USA', y: 38 },
-    { x: 'GBR', y: 17 },
+    { x: 'GBR', y: 87 },
     { x: 'CHN', y: 26 },
   ],
 ];
@@ -298,6 +288,20 @@ export const barCustomSeries = [
   },
   {
     dataSource: barChartData[2],
+    xName: 'x',
+    yName: 'y',
+    name: 'Bronze',
+    type: 'Column',
+    marker: {
+      dataLabel: {
+        visible: true,
+        position: 'Top',
+        font: { fontWeight: '600', color: '#ffffff' },
+      },
+    },
+  },
+  {
+    dataSource: barChartData[3],
     xName: 'x',
     yName: 'y',
     name: 'Bronze',
@@ -484,7 +488,7 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'home',
+        name: 'dashboard',
         icon: <FiHome />,
       },
     ],
@@ -540,7 +544,7 @@ export const links = [
       // },
 
       {
-        name: 'bar',
+        name: 'branch',
         icon: <AiOutlineBarChart />,
       },
       {
@@ -624,41 +628,32 @@ export const chatData = [
 
 export const earningData = [
   {
-    icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
-    percentage: '-4%',
-    title: 'Customers',
+    icon: <LuBaby  />,
+    amount: '1,054',
+    title: 'Kiddies',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
-    pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
-    amount: '4,396',
-    percentage: '+23%',
-    title: 'Products',
+    icon: <FaBookReader   />,
+    amount: '696',
+    title: 'Teenagers',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'green-600',
   },
   {
-    icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
+    icon: <FaGraduationCap />,
+    amount: '439',
+    title: 'Undergraduates',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
-
-    pcColor: 'green-600',
   },
   {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
-    percentage: '-12%',
-    title: 'Refunds',
+    icon: <BsBriefcaseFill  />,
+    amount: '1,259',
+    title: 'Adults',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
-    pcColor: 'red-600',
   },
 ];
 
