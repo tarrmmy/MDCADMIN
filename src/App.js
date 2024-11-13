@@ -68,26 +68,26 @@ const App = () => {
                 <Route path="/" element={(<Ecommerce />)} />
                 <Route path="/dashboard" element={(<Ecommerce />)} />
 
-                {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
+                {/* departments  */}
+                <Route path="/record" element={<Orders />} />
+                <Route path="/participants" element={<Employees />} />
+                <Route path="/clinic" element={<Customers />} />
 
-                {/* apps  */}
+                {/* tools  */}
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/editor" element={<Editor />} />
                 <Route path="/calendar" element={<Calendar />} />
-                <Route path="/color-picker" element={<ColorPicker />} />
+                {/* <Route path="/color-picker" element={<ColorPicker />} /> */}
 
-                {/* charts  */}
+                {/* statistics  */}
                 <Route path="/line" element={<Line />} />
                 <Route path="/area" element={<Area />} />
-                <Route path="/branch" element={<Bar />} />
-                <Route path="/pie" element={<Pie />} />
+                <Route path="/gender" element={<Bar />} />
+                <Route path="/branch-pie" element={<Pie />} />
                 <Route path="/financial" element={<Financial />} />
-                <Route path="/color-mapping" element={<ColorMapping />} />
+                <Route path="/branch-bar" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
-                <Route path="/stacked" element={<Stacked />} />
+                <Route path="/category" element={<Stacked />} />
 
               </Routes>
             </div>

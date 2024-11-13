@@ -241,19 +241,20 @@ export const areaCustomSeries = [
 
 export const barChartData = [
   [
-    { x: 'USA', y: 96 },
-    { x: 'GBR', y: 27 },
-    { x: 'CHN', y: 26 },
+    { x: 'MALE', y: 96 },
+    { x: 'FEMALE', y: 27 },
   ],
   [
-    { x: 'USA', y: 77 },
-    { x: 'GBR', y: 23 },
-    { x: 'CHN', y: 18 },
+    { x: 'MALE', y: 77 },
+    { x: 'FEMALE', y: 23 },
   ],
   [
-    { x: 'USA', y: 38 },
-    { x: 'GBR', y: 87 },
-    { x: 'CHN', y: 26 },
+    { x: 'MALE', y: 38 },
+    { x: 'FEMALE', y: 87 },
+  ],
+  [
+    { x: 'MALE', y: 68 },
+    { x: 'FEMALE', y: 47 },
   ],
 ];
 
@@ -262,7 +263,7 @@ export const barCustomSeries = [
     dataSource: barChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Gold',
+    name: 'Kiddies',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -276,7 +277,7 @@ export const barCustomSeries = [
     dataSource: barChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Silver',
+    name: 'Teenagers',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -290,7 +291,7 @@ export const barCustomSeries = [
     dataSource: barChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'Bronze',
+    name: 'Undergraduates',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -304,7 +305,7 @@ export const barCustomSeries = [
     dataSource: barChartData[3],
     xName: 'x',
     yName: 'y',
-    name: 'Bronze',
+    name: 'Adults',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -318,54 +319,54 @@ export const barCustomSeries = [
 
 export const colorMappingData = [
   [
-    { x: 'Jan', y: 6.96 },
-    { x: 'Feb', y: 8.9 },
-    { x: 'Mar', y: 12 },
-    { x: 'Apr', y: 17.5 },
-    { x: 'May', y: 22.1 },
-    { x: 'June', y: 25 },
-    { x: 'July', y: 29.4 },
-    { x: 'Aug', y: 29.6 },
-    { x: 'Sep', y: 25.8 },
-    { x: 'Oct', y: 21.1 },
-    { x: 'Nov', y: 15.5 },
-    { x: 'Dec', y: 9.9 },
+    { x: 'Isolo', y: 53 },
+    { x: 'Mushin', y: 26},
+    { x: 'Surulere', y: 41 },
+    { x: 'Badagry', y: 120},
+    { x: 'Ijebu', y: 34 },
+    { x: 'Amuwo-Odofin', y: 40 },
+    { x: 'Ijede', y: 350 },
+    { x: 'Ikorodu', y: 210 },
+    { x: 'Oshodi', y: 165 },
+    { x: 'Alimosho', y: 89 },
+    { x: 'Epe', y: 51 },
+    { x: 'Somolu', y: 18},
   ],
   ['#FFFF99'],
   ['#FFA500'],
   ['#FF4040'],
 ];
 
-export const rangeColorMapping = [
-  { label: '1°C to 10°C',
-    start: '1',
-    end: '10',
-    colors: colorMappingData[1] },
+// export const rangeColorMapping = [
+//   { label: '1°C to 10°C',
+//     start: '1',
+//     end: '10',
+//     colors: colorMappingData[1] },
 
-  { label: '11°C to 20°C',
-    start: '11',
-    end: '20',
-    colors: colorMappingData[2] },
+//   { label: '11°C to 20°C',
+//     start: '11',
+//     end: '20',
+//     colors: colorMappingData[2] },
 
-  { label: '21°C to 30°C',
-    start: '21',
-    end: '30',
-    colors: colorMappingData[3] },
+//   { label: '21°C to 30°C',
+//     start: '21',
+//     end: '30',
+//     colors: colorMappingData[3] },
 
-];
+// ];
 
 export const ColorMappingPrimaryXAxis = {
   valueType: 'Category',
   majorGridLines: { width: 0 },
-  title: 'Months',
+  title: 'Branch',
 };
 
 export const ColorMappingPrimaryYAxis = {
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
-  labelFormat: '{value}°C',
-  title: 'Temperature',
+  labelFormat: '{value}',
+  title: 'Numbers',
 };
 
 export const FinancialPrimaryXAxis = {
@@ -497,15 +498,15 @@ export const links = [
     title: 'Departments',
     links: [
       {
-        name: 'orders',
+        name: 'record',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: 'participants',
         icon: <IoMdContacts />,
       },
       {
-        name: 'customers',
+        name: 'clinic',
         icon: <RiContactsLine />,
       },
     ],
@@ -534,21 +535,12 @@ export const links = [
   {
     title: 'Statistics',
     links: [
-      // {
-      //   name: 'line',
-      //   icon: <AiOutlineStock />,
-      // },
-      // {
-      //   name: 'area',
-      //   icon: <AiOutlineAreaChart />,
-      // },
-
       {
-        name: 'branch',
+        name: 'gender',
         icon: <AiOutlineBarChart />,
       },
       {
-        name: 'pie',
+        name: 'branch-pie',
         icon: <FiPieChart />,
       },
       // {
@@ -556,7 +548,7 @@ export const links = [
       //   icon: <RiStockLine />,
       // },
       {
-        name: 'color-mapping',
+        name: 'branch-bar',
         icon: <BsBarChart />,
       },
       // {
@@ -564,7 +556,7 @@ export const links = [
       //   icon: <GiLouvrePyramid />,
       // },
       {
-        name: 'stacked',
+        name: 'category',
         icon: <AiOutlineBarChart />,
       },
     ],
@@ -2129,7 +2121,6 @@ export const ordersData = [
   {
     OrderID: 10248,
     CustomerName: 'Vinet',
-
     TotalAmount: 32.38,
     OrderItems: 'Fresh Tomato',
     Location: 'USA',
@@ -3123,13 +3114,13 @@ export const lineCustomSeries = [
 ];
 
 export const pieChartData = [
-  { x: 'Labour', y: 18, text: '18%' },
-  { x: 'Legal', y: 8, text: '8%' },
-  { x: 'Production', y: 15, text: '15%' },
-  { x: 'License', y: 11, text: '11%' },
-  { x: 'Facilities', y: 18, text: '18%' },
-  { x: 'Taxes', y: 14, text: '14%' },
-  { x: 'Insurance', y: 16, text: '16%' },
+  { x: 'Oshodi', y: 18, text: '18%' },
+  { x: 'Ikorodu', y: 8, text: '8%' },
+  { x: 'Badagry', y: 15, text: '15%' },
+  { x: 'Kosofe', y: 11, text: '11%' },
+  { x: 'Amuwo-Odofin', y: 18, text: '18%' },
+  { x: 'Mushin', y: 14, text: '14%' },
+  { x: 'Ijebu', y: 16, text: '16%' },
 ];
 
 export const contextMenuItems = [
@@ -3160,22 +3151,16 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Kiddies', y: 111.1 },
+    { x: 'Teenagers', y: 127.3 },
+    { x: 'Undergraduates', y: 143.4 },
+    { x: 'Adults', y: 159.9 }
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Kiddies', y: 111.1 },
+    { x: 'Teenagers', y: 127.3 },
+    { x: 'Undergraduates', y: 143.4 },
+    { x: 'Adults', y: 159.9 }
   ],
 ];
 
@@ -3184,7 +3169,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Male',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3193,7 +3178,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Female',
     type: 'StackingColumn',
     background: 'red',
 
