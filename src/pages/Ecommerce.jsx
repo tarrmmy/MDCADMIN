@@ -2,6 +2,7 @@ import React from 'react';
 import { FaUsers } from 'react-icons/fa6';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
+import Employees from './Employees';
 
 import { Button, SparkLine } from '../components';
 import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData } from '../data/dummy';
@@ -314,6 +315,7 @@ const Ecommerce = () => {
           </div>
         </div>
       </div> */}
+      <Employees />
     </div>
   );
 };
