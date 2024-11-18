@@ -3,9 +3,8 @@ import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineBarChart } from 'rea
 import { FiHome, FiEdit, FiPieChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBriefcaseFill, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { FaBookReader } from 'react-icons/fa';
-import { IoMdContacts } from 'react-icons/io';
-import { FaGraduationCap } from 'react-icons/fa6';
-import { RiContactsLine } from 'react-icons/ri';
+import { FaGraduationCap, FaUsers, FaUserDoctor  } from 'react-icons/fa6';
+import { GiArchiveRegister } from "react-icons/gi";
 import { LuBaby } from 'react-icons/lu';
 import { TiTick } from 'react-icons/ti';
 import { GrLocation } from 'react-icons/gr';
@@ -449,11 +448,14 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  { 
+    headerText: 'Employee',
     width: '150',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
+    textAlign: 'Center' 
+  },
+  { 
+    field: 'Name',
     headerText: '',
     width: '0',
     textAlign: 'Center',
@@ -463,17 +465,19 @@ export const employeesGrid = [
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { 
+    headerText: 'Country',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
-
-  { field: 'HireDate',
+    template: gridEmployeeCountry 
+  },
+  { 
+    field: 'HireDate',
     headerText: 'Hire Date',
     width: '135',
     format: 'yMd',
-    textAlign: 'Center' },
-
+    textAlign: 'Center' 
+  },
   { field: 'ReportsTo',
     headerText: 'Reports To',
     width: '120',
@@ -499,15 +503,15 @@ export const links = [
     links: [
       {
         name: 'record',
-        icon: <AiOutlineShoppingCart />,
+        icon: <GiArchiveRegister />,
       },
       {
         name: 'participants',
-        icon: <IoMdContacts />,
+        icon: <FaUsers />,
       },
       {
         name: 'clinic',
-        icon: <RiContactsLine />,
+        icon: <FaUserDoctor />,
       },
     ],
   },
@@ -917,156 +921,92 @@ export const ordersGrid = [
 
 export const customersData = [
   {
-    CustomerID: 1030,
-
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
-    ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
-    CustomerImage:
-      avatar2,
-    StatusBg: 'red',
-    Weeks: '34',
-    Budget: '$16.5k',
-    Location: 'USA',
+    CustomerID: 30,
+    FirstName: 'Michael',
+    LastName: 'Jason',
+    Diagnosis: 'Weekly WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Cancel',
   },
   {
-    CustomerID: 1031,
-    CustomerName: 'Nirav Joshi',
-    CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
-    ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
-    StatusBg: '#8BE78B',
-    Weeks: '40',
-    Budget: '$2.4k',
-    Location: 'India',
+    CustomerID: 31,
+    FirstName: 'Joshi',
+    LastName: 'Nirav',
+    Diagnosis: 'Hosting Press HTML',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Active',
   },
   {
-    CustomerID: 1032,
-
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
-    Status: 'Active',
-    CustomerImage:
-      avatar3,
-
-    StatusBg: '#8BE78B',
-    Weeks: '11',
-    Budget: '$3.9k',
-    Location: 'India',
+    CustomerID: 32,
+    FirstName: 'Sunil ',
+    LastName: 'Joshi',
+    Diagnosis: 'Elite Admin',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Active',
   },
   {
-    CustomerID: 1033,
-
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
-    CustomerImage:
-      avatar4,
-    StatusBg: '#FEC90F',
-    Weeks: '19',
-    Budget: '$24.5k',
-    Location: 'USA',
+    CustomerID: 33,
+    FirstName: 'Andrew',
+    LastName: 'McDownland',
+    Diagnosis: 'Real Homes WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Pending',
   },
   {
-    CustomerID: 1034,
-
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
-    CustomerImage:
-      avatar,
-    StatusBg: '#8BE78B',
-    Weeks: '34',
-    Budget: '$16.5k',
-    Location: 'USA',
+    CustomerID: 34,
+    FirstName: 'Christopher ',
+    LastName: 'Jamil',
+    Diagnosis: 'MedicalPro WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Completed',
   },
   {
-    CustomerID: 1035,
-
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
-    ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
-    CustomerImage:
-      avatar2,
-    StatusBg: 'red',
-    Weeks: '34',
-    Budget: '$16.5k',
-    Location: 'USA',
+    CustomerID: 35,
+    FirstName: 'Michael',
+    LastName: 'Scofield',
+    Diagnosis: 'Weekly WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Cancel',
   },
   {
-    CustomerID: 1036,
-    CustomerName: 'Nirav Joshi',
-    CustomerEmail: 'nirav@gmail.com',
-    CustomerImage:
-      avatar2,
-    ProjectName: 'Hosting Press HTML',
-    Status: 'Active',
-    StatusBg: '#8BE78B',
-    Weeks: '40',
-    Budget: '$2.4k',
-    Location: 'India',
+    CustomerID: 36,
+    FirstName: 'Nirav ',
+    LastName: 'John',
+    Diagnosis: 'Hosting Press HTML',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Active',
   },
   {
-    CustomerID: 1037,
-
-    CustomerName: 'Sunil Joshi',
-    CustomerEmail: 'sunil@gmail.com',
-    ProjectName: 'Elite Admin',
-    Status: 'Active',
-    CustomerImage:
-      avatar3,
-
-    StatusBg: '#8BE78B',
-    Weeks: '11',
-    Budget: '$3.9k',
-    Location: 'India',
+    CustomerID: 37,
+    FirstName: ' Joshi',
+    LastName: 'Sunil',
+    Diagnosis: 'Elite Admin',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Active',
   },
   {
-    CustomerID: 1038,
-
-    CustomerName: 'Andrew McDownland',
-    CustomerEmail: 'andrew@gmail.com',
-    ProjectName: 'Real Homes WP Theme',
-    Status: 'Pending',
-    CustomerImage:
-      avatar4,
-    StatusBg: '#FEC90F',
-    Weeks: '19',
-    Budget: '$24.5k',
-    Location: 'USA',
+    CustomerID: 38,
+    FirstName: 'McDownland',
+    LastName: 'Andrew',
+    Diagnosis: 'Real Homes WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Pending',
   },
   {
-    CustomerID: 1039,
-    CustomerName: 'Christopher Jamil',
-    CustomerEmail: 'jamil@gmail.com',
-    ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
-    CustomerImage:
-      avatar,
-    StatusBg: '#8BE78B',
-    Weeks: '34',
-    Budget: '$16.5k',
-    Location: 'USA',
+    CustomerID: 39,
+    FirstName: 'Christopher ',
+    LastName: 'Mubarak',
+    Diagnosis: 'MedicalPro WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Completed',
   },
   {
-    CustomerID: 1040,
-    CustomerName: 'Michael',
-    CustomerEmail: 'michael@gmail.com',
-    ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
-    CustomerImage:
-      avatar2,
-    StatusBg: 'red',
-    Weeks: '34',
-    Budget: '$16.5k',
-    Location: 'USA',
+    CustomerID: 40,
+    FirstName: 'Michael',
+    LastName: 'Brown',
+    Diagnosis: 'Weekly WP Theme',
+    Prescription: 'Paracetamol, Panadol',
+    Doctor: 'Cancel',
   },
 ];
 
