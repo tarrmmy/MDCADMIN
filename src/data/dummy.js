@@ -1,10 +1,10 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineBarChart } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineBarChart } from 'react-icons/ai';
 import { FiHome, FiEdit, FiPieChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBriefcaseFill, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { FaBookReader } from 'react-icons/fa';
-import { FaGraduationCap, FaUsers, FaUserDoctor  } from 'react-icons/fa6';
-import { GiArchiveRegister } from "react-icons/gi";
+import { FaGraduationCap, FaUsers, FaUserDoctor } from 'react-icons/fa6';
+import { GiArchiveRegister } from 'react-icons/gi';
 import { LuBaby } from 'react-icons/lu';
 import { TiTick } from 'react-icons/ti';
 import { GrLocation } from 'react-icons/gr';
@@ -319,9 +319,9 @@ export const barCustomSeries = [
 export const colorMappingData = [
   [
     { x: 'Isolo', y: 53 },
-    { x: 'Mushin', y: 26},
+    { x: 'Mushin', y: 26 },
     { x: 'Surulere', y: 41 },
-    { x: 'Badagry', y: 120},
+    { x: 'Badagry', y: 120 },
     { x: 'Ijebu', y: 34 },
     { x: 'Amuwo-Odofin', y: 40 },
     { x: 'Ijede', y: 350 },
@@ -329,30 +329,12 @@ export const colorMappingData = [
     { x: 'Oshodi', y: 165 },
     { x: 'Alimosho', y: 89 },
     { x: 'Epe', y: 51 },
-    { x: 'Somolu', y: 18},
+    { x: 'Somolu', y: 18 },
   ],
   ['#FFFF99'],
   ['#FFA500'],
   ['#FF4040'],
 ];
-
-// export const rangeColorMapping = [
-//   { label: '1°C to 10°C',
-//     start: '1',
-//     end: '10',
-//     colors: colorMappingData[1] },
-
-//   { label: '11°C to 20°C',
-//     start: '11',
-//     end: '20',
-//     colors: colorMappingData[2] },
-
-//   { label: '21°C to 30°C',
-//     start: '21',
-//     end: '30',
-//     colors: colorMappingData[3] },
-
-// ];
 
 export const ColorMappingPrimaryXAxis = {
   valueType: 'Category',
@@ -447,7 +429,7 @@ export const customersGrid = [
 
 ];
 
-export const employeesGrid = [
+export const participantsGrid = [
   { 
     headerText: 'Employee',
     width: '150',
@@ -679,7 +661,6 @@ export const recentTransactions = [
     desc: 'Money reversed',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
-
     pcColor: 'green-600',
   },
   {
@@ -687,7 +668,6 @@ export const recentTransactions = [
     amount: '+$350',
     title: 'Bank Transfer',
     desc: 'Money Added',
-
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
     pcColor: 'green-600',
@@ -1010,7 +990,7 @@ export const customersData = [
   },
 ];
 
-export const employeesData = [
+export const participantsData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',

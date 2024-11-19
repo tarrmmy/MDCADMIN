@@ -4,10 +4,11 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
+import { Ecommerce, Calendar, Participants, Stacked, Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
+import Record from './pages/Record';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -69,8 +70,8 @@ const App = () => {
                 <Route path="/dashboard" element={(<Ecommerce />)} />
 
                 {/* departments  */}
-                <Route path="/record" element={<Orders />} />
-                <Route path="/participants" element={<Employees />} />
+                <Route path="/record" element={<Record />} />
+                <Route path="/participants" element={<Participants />} />
                 <Route path="/clinic" element={<Customers />} />
 
                 {/* tools  */}

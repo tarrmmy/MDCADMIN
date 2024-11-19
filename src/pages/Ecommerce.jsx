@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaUsers } from 'react-icons/fa6';
 // import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-import Employees from './Employees';
+import Employees from './Participants';
 import { earningData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -15,7 +15,7 @@ const Ecommerce = () => {
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
-              <p className="text-2xl">3,448</p>
+              <p className="text-2xl text-black font-bold">3,448</p>
             </div>
             <button
               type="button"
@@ -38,7 +38,7 @@ const Ecommerce = () => {
                 {item.icon}
               </button>
               <p className="mt-3">
-                <span className="text-lg font-semibold">{item.amount}</span>
+                <span className="text-lg font-bold">{item.amount}</span>
               </p>
               <p className="text-sm text-gray-400  mt-1">{item.title}</p>
             </div>
