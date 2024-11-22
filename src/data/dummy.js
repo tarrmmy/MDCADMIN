@@ -413,45 +413,6 @@ export const customersGrid = [
 ];
 
 export const participantsGrid = [
-<<<<<<< HEAD
-  { 
-    field: 'FirstName',
-    headerText: 'First Name',
-    width: '150',
-    textAlign: 'Left',
-  },
-  { field: 'LastName',
-    headerText: 'Last Name',
-    width: '150',
-    textAlign: 'Left',
-  },
-  { field: 'Category',
-    headerText: 'Category',
-    width: '120',
-    textAlign: 'Left',
-  },
-  { field: 'Branch',
-    headerText: 'Branch',
-    width: '120',
-    textAlign: 'Left',
-  },
-  { field: 'Email',
-    headerText: 'Email',
-    width: '180',
-    textAlign: 'Left',
-  },
-  { field: 'Gender',
-    headerText: 'Gender',
-    width: '90',
-    textAlign: 'Left',
-  },
-  { 
-    field: 'RegistrationDate',
-    headerText: 'Registration Date',
-    width: '135',
-    format: 'yMd',
-    textAlign: 'Left' 
-=======
   {
     headerText: 'Employee',
     width: '150',
@@ -481,7 +442,6 @@ export const participantsGrid = [
     width: '135',
     format: 'yMd',
     textAlign: 'Center',
->>>>>>> d49cd7bf21d7e346c22cc3b2bb194810ecbe9fa1
   },
   { field: 'ReportsTo',
     headerText: 'Reports To',
