@@ -413,6 +413,7 @@ export const customersGrid = [
 ];
 
 export const participantsGrid = [
+<<<<<<< HEAD
   { 
     field: 'FirstName',
     headerText: 'First Name',
@@ -450,6 +451,37 @@ export const participantsGrid = [
     width: '135',
     format: 'yMd',
     textAlign: 'Left' 
+=======
+  {
+    headerText: 'Employee',
+    width: '150',
+    template: gridEmployeeProfile,
+    textAlign: 'Center',
+  },
+  {
+    field: 'Name',
+    headerText: '',
+    width: '0',
+    textAlign: 'Center',
+  },
+  { field: 'Title',
+    headerText: 'Designation',
+    width: '170',
+    textAlign: 'Center',
+  },
+  {
+    headerText: 'Country',
+    width: '120',
+    textAlign: 'Center',
+    template: gridEmployeeCountry,
+  },
+  {
+    field: 'HireDate',
+    headerText: 'Hire Date',
+    width: '135',
+    format: 'yMd',
+    textAlign: 'Center',
+>>>>>>> d49cd7bf21d7e346c22cc3b2bb194810ecbe9fa1
   },
   { field: 'ReportsTo',
     headerText: 'Reports To',
@@ -597,14 +629,14 @@ export const chatData = [
 
 export const earningData = [
   {
-    icon: <LuBaby  />,
+    icon: <LuBaby />,
     amount: '1,054',
     title: 'Kiddies',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
   {
-    icon: <FaBookReader   />,
+    icon: <FaBookReader />,
     amount: '696',
     title: 'Teenagers',
     iconColor: 'rgb(255, 244, 229)',
@@ -618,7 +650,7 @@ export const earningData = [
     iconBg: 'rgb(255, 244, 229)',
   },
   {
-    icon: <BsBriefcaseFill  />,
+    icon: <BsBriefcaseFill />,
     amount: '1,259',
     title: 'Adults',
     iconColor: 'rgb(0, 194, 146)',
@@ -2076,13 +2108,13 @@ export const stackedChartData = [
     { x: 'Kiddies', y: 111.1 },
     { x: 'Teenagers', y: 127.3 },
     { x: 'Undergraduates', y: 143.4 },
-    { x: 'Adults', y: 159.9 }
+    { x: 'Adults', y: 159.9 },
   ],
   [
     { x: 'Kiddies', y: 111.1 },
     { x: 'Teenagers', y: 127.3 },
     { x: 'Undergraduates', y: 143.4 },
-    { x: 'Adults', y: 159.9 }
+    { x: 'Adults', y: 159.9 },
   ],
 ];
 
