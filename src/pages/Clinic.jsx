@@ -2,7 +2,7 @@ import * as React from 'react';
 import { GridComponent, ColumnsDirective, ColumnDirective, Sort, Inject, Toolbar, Filter, Edit } from '@syncfusion/ej2-react-grids';
 import { customersData } from '../data/dummy';
 
-const Customers = () => {
+const Clinic = () => {
   const filterSettings = { type: 'Excel' };
   const toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
   const editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
@@ -24,4 +24,4 @@ const Customers = () => {
     </div>
   </div>);
 }
-export default Customers;
+export default Clinic;
