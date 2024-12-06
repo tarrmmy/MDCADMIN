@@ -37,7 +37,7 @@ const App = () => {
     setThemeSettings,
   } = useStateContext();
 
-  const isLoggedIn = false;
+  const isLoggedIn = true;
   useEffect(() => {
     const currentThemeColor = localStorage.getItem("colorMode");
     const currentThemeMode = localStorage.getItem("themeMode");
