@@ -32,7 +32,8 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiMarriott /> <span>MDC&apos;24</span>
+              <img src="/logoacademy.png" alt={<SiMarriott />} width={15} />{" "}
+              <span>MDC&apos;24</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
