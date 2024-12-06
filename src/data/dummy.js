@@ -69,23 +69,23 @@ export const kanbanGrid = [
   { headerText: "Done", keyField: "Close", allowToggle: true },
 ];
 
-const gridEmployeeProfile = (props) => (
-  <div className="flex items-center gap-2">
-    <img
-      className="rounded-full w-10 h-10"
-      src={props.EmployeeImage}
-      alt="employee"
-    />
-    <p>{props.Name}</p>
-  </div>
-);
+// const gridEmployeeProfile = (props) => (
+//   <div className="flex items-center gap-2">
+//     <img
+//       className="rounded-full w-10 h-10"
+//       src={props.EmployeeImage}
+//       alt="employee"
+//     />
+//     <p>{props.Name}</p>
+//   </div>
+// );
 
-const gridEmployeeCountry = (props) => (
-  <div className="flex items-center justify-center gap-2">
-    <GrLocation />
-    <span>{props.Country}</span>
-  </div>
-);
+// const gridEmployeeCountry = (props) => (
+//   <div className="flex items-center justify-center gap-2">
+//     <GrLocation />
+//     <span>{props.Country}</span>
+//   </div>
+// );
 
 export const EditorData = () => (
   <div>
@@ -458,46 +458,63 @@ export const customersGrid = [
 
 export const participantsGrid = [
   {
-    headerText: "Employee",
-    width: "150",
-    template: gridEmployeeProfile,
-    textAlign: "Center",
-  },
-  {
-    field: "Name",
-    headerText: "",
-    width: "0",
-    textAlign: "Center",
-  },
-  {
-    field: "Title",
-    headerText: "Designation",
-    width: "170",
-    textAlign: "Center",
-  },
-  {
-    headerText: "Country",
-    width: "120",
-    textAlign: "Center",
-    template: gridEmployeeCountry,
-  },
-  {
-    field: "HireDate",
-    headerText: "Hire Date",
-    width: "135",
-    format: "yMd",
-    textAlign: "Center",
-  },
-  {
-    field: "ReportsTo",
-    headerText: "Reports To",
+    field: "FirstName",
+    headerText: "FIrst Name",
     width: "120",
     textAlign: "Left",
   },
   {
-    field: "EmployeeID",
-    headerText: "Employee ID",
-    width: "125",
+    field: "LastName",
+    headerText: "Last Name",
+    width: "120",
+    textAlign: "Left",
+  },
+  {
+    field: "Email",
+    headerText: "Email",
+    width: "120",
+    textAlign: "Left",
+  },
+  {
+    field: "PhoneNumber",
+    headerText: "Phone Number",
+    width: "100",
+    textAlign: "Left",
+  },
+  {
+    field: "Gender",
+    headerText: "Gender",
+    width: "70",
+    textAlign: "Left",
+  },
+  {
+    field: "School",
+    headerText: "School",
+    width: "150",
+    textAlign: "Left",
+  },
+  {
+    field: "State",
+    headerText: "State",
+    width: "70",
+    textAlign: "Left",
+  },
+  {
+    field: "Category",
+    headerText: "Category",
+    width: "70",
+    textAlign: "Left",
+  },
+  {
+    field: "Branch",
+    headerText: "Branch",
+    width: "70",
+    textAlign: "Left",
+  },
+  {
+    field: "CreatedAt",
+    headerText: "Date",
+    width: "100",
     textAlign: "Left",
   },
 ];
@@ -1009,59 +1026,74 @@ export const customersData = [
 
 export const participantsData = [
   {
-    EmployeeID: 3,
+    // EmployeeID: 3,
     FirstName: "Lulia",
     LastName: "Albu",
     Email: "oshodi@gmail.com",
+    PhoneNumber: '01234567890',
     Gender: "Male",
+    School: "University of Ibadan",
+    State: "Oyo",
     Category: "Teenager",
     Branch: "Ijede",
-    RegistrationDate: "01/02/2021",
-    ReportsTo: "Carson",
+    CreatedAt: "01/02/2021",
+    // ReportsTo: "Carson",
   },
   {
-    EmployeeID: 4,
+    // EmployeeID: 4,
     FirstName: "Siegbert",
     LastName: "Gottfried",
     Email: "oshodi@gmail.com",
+    PhoneNumber: '01234567890',
     Gender: "Male",
+    School: "University of Ibadan",
+    State: "Oyo",
     Category: "Teenager",
     Branch: "Ijede",
-    RegistrationDate: "01/02/2021",
-    ReportsTo: "Carson",
+    CreatedAt: "01/02/2021",
+    // ReportsTo: "Carson",
   },
   {
-    EmployeeID: 5,
+    // EmployeeID: 5,
     FirstName: "Omar",
     LastName: "Vitold",
     Email: "oshodi@gmail.com",
+    PhoneNumber: '01234567890',
     Gender: "Male",
+    School: "University of Ibadan",
+    State: "Oyo",
     Category: "Teenager",
     Branch: "Ijede",
-    RegistrationDate: "01/02/2021",
-    ReportsTo: "Carson",
+    CreatedAt: "01/02/2021",
+    // ReportsTo: "Carson",
   },
   {
-    EmployeeID: 4,
+    // EmployeeID: 4,
     FirstName: "Penjani",
     LastName: "Inyene",
     Email: "oshodi@gmail.com",
+    PhoneNumber: '01234567890',
     Gender: "Male",
+    School: "University of Ibadan",
+    State: "Oyo",
     Category: "Teenager",
     Branch: "Ijede",
-    RegistrationDate: "01/02/2021",
-    ReportsTo: "Carson",
+    CreatedAt: "01/02/2021",
+    // ReportsTo: "Carson",
   },
   {
-    EmployeeID: 5,
+    // EmployeeID: 5,
     FirstName: "Miron",
     LastName: "Vitold",
     Email: "oshodi@gmail.com",
+    PhoneNumber: '01234567890',
     Gender: "Male",
+    School: "University of Ibadan",
+    State: "Oyo",
     Category: "Teenager",
     Branch: "Ijede",
-    RegistrationDate: "01/02/2021",
-    ReportsTo: "Carson",
+    CreatedAt: "01/02/2021",
+    // ReportsTo: "Carson",
   },
 ];
 

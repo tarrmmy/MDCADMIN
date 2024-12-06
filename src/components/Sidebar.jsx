@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SiMarriott } from "react-icons/si";
+// import { SiMarriott } from "react-icons/si";
+import logo from "../data/logoacademy.png"
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
@@ -32,7 +33,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiMarriott /> <span>MDC&apos;24</span>
+              <img src={logo} className="h-14 w-14" /> <span>MDC&apos;24</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button

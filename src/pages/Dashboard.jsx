@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUsers } from "react-icons/fa6";
 // import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-import Employees from "./Participants";
+import Participants from "./Participants";
 import { earningData } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
@@ -47,7 +47,7 @@ const Dashboard = () => {
           ))}
         </div>
       </div>
-      <Employees />
+      <Participants />
     </div>
   );
 };
