@@ -33,7 +33,7 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <img src={logo} className="h-14 w-14" /> <span>MDC&apos;24</span>
+              <img src={logo} className="h-14 w-14" /> <span>MDC</span>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
