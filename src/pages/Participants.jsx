@@ -1,11 +1,18 @@
-import React from 'react';
-import { GridComponent, Inject, ColumnsDirective, ColumnDirective, Search, Page } from '@syncfusion/ej2-react-grids';
+import React from "react";
+import {
+  GridComponent,
+  Inject,
+  ColumnsDirective,
+  ColumnDirective,
+  Search,
+  Page,
+} from "@syncfusion/ej2-react-grids";
 
-import { participantsData, participantsGrid } from '../data/dummy';
-import { Header } from '../components';
+import { participantsData, participantsGrid } from "../data/dummy";
+import { Header } from "../components";
 
-const Participants = () => {
-  const toolbarOptions = ['Search'];
+const Participants = ({ participantsData }) => {
+  const toolbarOptions = ["Search"];
 
   const editing = { allowDeleting: true, allowEditing: true };
 
@@ -17,16 +24,17 @@ const Participants = () => {
         width="auto"
         allowPaging
         allowSorting
-        pageSettings={{ pageCount: 5 }}
+        pageSettings={{ pageSize: 20 }}
         editSettings={editing}
         toolbar={toolbarOptions}
       >
         <ColumnsDirective>
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-          {participantsGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
+          {participantsGrid.map((item, index) => (
+            <ColumnDirective key={index} {...item} />
+          ))}
         </ColumnsDirective>
         <Inject services={[Search, Page]} />
-
       </GridComponent>
     </div>
   );

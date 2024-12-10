@@ -458,61 +458,61 @@ export const customersGrid = [
 
 export const participantsGrid = [
   {
-    field: "FirstName",
+    field: "firstName",
     headerText: "FIrst Name",
     width: "120",
     textAlign: "Left",
   },
   {
-    field: "LastName",
+    field: "lastName",
     headerText: "Last Name",
     width: "120",
     textAlign: "Left",
   },
   {
-    field: "Email",
+    field: "email",
     headerText: "Email",
     width: "120",
     textAlign: "Left",
   },
   {
-    field: "PhoneNumber",
+    field: "phoneNumber",
     headerText: "Phone Number",
     width: "100",
     textAlign: "Left",
   },
   {
-    field: "Gender",
+    field: "gender",
     headerText: "Gender",
     width: "70",
     textAlign: "Left",
   },
   {
-    field: "School",
+    field: "schoolName",
     headerText: "School",
     width: "150",
     textAlign: "Left",
   },
   {
-    field: "State",
+    field: "state",
     headerText: "State",
     width: "70",
     textAlign: "Left",
   },
   {
-    field: "Category",
+    field: "category",
     headerText: "Category",
     width: "70",
     textAlign: "Left",
   },
   {
-    field: "Branch",
+    field: "branch.name",
     headerText: "Branch",
     width: "70",
     textAlign: "Left",
   },
   {
-    field: "CreatedAt",
+    field: "updatedAt",
     headerText: "Date",
     width: "100",
     textAlign: "Left",
@@ -676,6 +676,29 @@ export const earningData = [
     iconBg: "rgb(235, 250, 242)",
   },
 ];
+
+export const boxIcon = {
+  kiddies: {
+    icon: <LuBaby />,
+    iconColor: "rgb(0, 194, 146)",
+    iconBg: "rgb(235, 250, 242)",
+  },
+  teenagers: {
+    icon: <FaBookReader />,
+    iconColor: "rgb(255, 244, 229)",
+    iconBg: "rgb(254, 201, 15)",
+  },
+  undergraduates: {
+    icon: <FaGraduationCap />,
+    iconColor: "rgb(228, 106, 118)",
+    iconBg: "rgb(255, 244, 229)",
+  },
+  adults: {
+    icon: <BsBriefcaseFill />,
+    iconColor: "rgb(0, 194, 146)",
+    iconBg: "rgb(235, 250, 242)",
+  },
+};
 
 export const recentTransactions = [
   {
@@ -1030,7 +1053,7 @@ export const participantsData = [
     FirstName: "Lulia",
     LastName: "Albu",
     Email: "oshodi@gmail.com",
-    PhoneNumber: '01234567890',
+    PhoneNumber: "01234567890",
     Gender: "Male",
     School: "University of Ibadan",
     State: "Oyo",
@@ -1044,7 +1067,7 @@ export const participantsData = [
     FirstName: "Siegbert",
     LastName: "Gottfried",
     Email: "oshodi@gmail.com",
-    PhoneNumber: '01234567890',
+    PhoneNumber: "01234567890",
     Gender: "Male",
     School: "University of Ibadan",
     State: "Oyo",
@@ -1058,7 +1081,7 @@ export const participantsData = [
     FirstName: "Omar",
     LastName: "Vitold",
     Email: "oshodi@gmail.com",
-    PhoneNumber: '01234567890',
+    PhoneNumber: "01234567890",
     Gender: "Male",
     School: "University of Ibadan",
     State: "Oyo",
@@ -1072,7 +1095,7 @@ export const participantsData = [
     FirstName: "Penjani",
     LastName: "Inyene",
     Email: "oshodi@gmail.com",
-    PhoneNumber: '01234567890',
+    PhoneNumber: "01234567890",
     Gender: "Male",
     School: "University of Ibadan",
     State: "Oyo",
@@ -1086,7 +1109,7 @@ export const participantsData = [
     FirstName: "Miron",
     LastName: "Vitold",
     Email: "oshodi@gmail.com",
-    PhoneNumber: '01234567890',
+    PhoneNumber: "01234567890",
     Gender: "Male",
     School: "University of Ibadan",
     State: "Oyo",

@@ -16,9 +16,7 @@ export const ContextProvider = ({ children }) => {
   const [themeSettings, setThemeSettings] = useState(false);
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
-  const [isLoggedIn, setIsLoggedIn] = useState(
-    localStorage.getItem("isLoggedIn") || false
-  );
+
   const setMode = (e) => {
     setCurrentMode(e.target.value);
     localStorage.setItem("themeMode", e.target.value);
@@ -27,10 +25,6 @@ export const ContextProvider = ({ children }) => {
   const setColor = (color) => {
     setCurrentColor(color);
     localStorage.setItem("colorMode", color);
-  };
-
-  const setLoggedInValue = (value) => {
-    localStorage.setItem("isLoggedIn", value);
   };
 
   const handleClick = (clicked) =>
@@ -56,8 +50,6 @@ export const ContextProvider = ({ children }) => {
         setColor,
         themeSettings,
         setThemeSettings,
-        isLoggedIn,
-        setIsLoggedIn,
       }}
     >
       {children}
