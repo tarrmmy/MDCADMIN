@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { handleLoginAdmin } from "../../actions/auth";
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import authAtom from "../../atoms/auth/auth.atom";
 
 const LoginPage = ({ isLoggedIn }) => {
-  const { currentColor, setIsLoggedIn } = useStateContext();
+  const { currentColor } = useStateContext();
   const [adminData, setAdminData] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
+  const setAuth = useSetRecoilState(authAtom);
+  const authData = useRecoilValue(authAtom);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,10 +24,14 @@ const LoginPage = ({ isLoggedIn }) => {
     try {
       const response = await handleLoginAdmin(adminData);
       if (response) {
-        console.log("Login successful:", response);
-        // setIsLoggedIn(true);
+        setAuth({
+          ...authData,
+          isLoggedIn: true,
+          token: response.token,
+          user: response.user,
+        });
       } else {
-        alert("Login failed. Please check your credentials.");
+        console.log("Login failed. Please check your credentials.");
       }
     } catch (error) {
       console.error("Error logging in:", error);
@@ -39,7 +47,7 @@ const LoginPage = ({ isLoggedIn }) => {
         isLoggedIn ? "hidden" : "fixed"
       } top-0 left-0 z-40 flex justify-center items-center h-screen w-screen bg-white/50 backdrop-blur-xl`}
     >
-      <div className="flex flex-col justify-center items-center gap-6 w-fit">
+      <div className="flex flex-col justify-center items-center gap-6 w-fit p-3">
         <img src="/logoacademy.png" alt="The Academy" width={70} />
         <div className="border-2 border-gray-300/60 p-7 rounded-xl flex flex-col justify-center items-start w-full gap-5">
           <h2 className="text-lg md:text-2xl font-bold w-full text-left">
