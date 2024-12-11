@@ -24,6 +24,7 @@ import { useStateContext } from "../contexts/ContextProvider";
 import { useRecoilValue } from "recoil";
 import authAtom from "../atoms/auth/auth.atom";
 import LoginPage from "./auth/login";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
   const { isLoggedIn } = useRecoilValue(authAtom);
@@ -36,6 +37,7 @@ const Main = () => {
     themeSettings,
     setThemeSettings,
   } = useStateContext();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const currentThemeColor = localStorage.getItem("colorMode");
@@ -45,6 +47,13 @@ const Main = () => {
       setCurrentMode(currentThemeMode);
     }
   }, []);
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate("/admin/login");
+    }
+  }, []);
+
   return (
     <>
       <div className="flex relative dark:bg-main-dark-bg">
@@ -83,6 +92,9 @@ const Main = () => {
             {themeSettings && <ThemeSettings />}
 
             <Routes>
+              {/* Login for admin */}
+              <Route path="/admin/login" element={<LoginPage />} />
+
               {/* dashboard  */}
               <Route path="/" element={<Dashboard />} />
               <Route path="/dashboard" element={<Dashboard />} />
@@ -112,7 +124,6 @@ const Main = () => {
           {/* <Footer /> */}
         </div>
       </div>
-      <LoginPage isLoggedIn={isLoggedIn} />
     </>
   );
 };

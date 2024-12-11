@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import { useStateContext } from "../../contexts/ContextProvider";
 import { handleLoginAdmin } from "../../actions/auth";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import authAtom from "../../atoms/auth/auth.atom";
+import { useNavigate } from "react-router-dom";
 
-const LoginPage = ({ isLoggedIn }) => {
+const LoginPage = () => {
   const { currentColor } = useStateContext();
   const [adminData, setAdminData] = useState({ email: "", password: "" });
   const [loading, setLoading] = useState(false);
   const setAuth = useSetRecoilState(authAtom);
   const authData = useRecoilValue(authAtom);
+  const navigate = useNavigate();
+
+  const isLoggedIn = authData.isLoggedIn;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,6 +34,8 @@ const LoginPage = ({ isLoggedIn }) => {
           token: response.token,
           user: response.user,
         });
+        localStorage.setItem("adminToken", response.token);
+        navigate("/dashboard");
       } else {
         console.log("Login failed. Please check your credentials.");
       }
@@ -41,11 +47,14 @@ const LoginPage = ({ isLoggedIn }) => {
     }
   };
 
+  if (isLoggedIn) {
+    navigate("/dashboard");
+    return null;
+  }
+
   return (
     <div
-      className={`${
-        isLoggedIn ? "hidden" : "fixed"
-      } top-0 left-0 z-40 flex justify-center items-center h-screen w-screen bg-white/50 backdrop-blur-xl`}
+      className={`fixed top-0 left-0 z-40 flex justify-center items-center h-screen w-screen bg-white/50 backdrop-blur-xl`}
     >
       <div className="flex flex-col justify-center items-center gap-6 w-fit p-3">
         <img src="/logoacademy.png" alt="The Academy" width={70} />
