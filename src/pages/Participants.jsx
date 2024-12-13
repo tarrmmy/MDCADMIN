@@ -43,7 +43,7 @@ const Participants = () => {
 
   const fetchParticipants = useCallback(async () => {
     const response = await handleGetAllParticipants({ page: 1, size: 20 });
-    const data = response.data;
+    const data = response?.data;
     setParticipants({ ...participantsData, participants: data });
   }, [handleGetAllParticipants]);
 
@@ -56,7 +56,7 @@ const Participants = () => {
       <Header category="Page" title="Participants" />
       <div className="w-fit ">
         <GridComponent
-          dataSource={participantsData.participants}
+          dataSource={participantsData?.participants}
           width="auto"
           allowSorting
           pageSettings={{ pageSize: 10 }}
