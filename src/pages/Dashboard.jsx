@@ -1,25 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { FaUsers } from "react-icons/fa6";
-// import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import Participants from "./Participants";
 import { earningData, boxIcon } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
-import {
-  handleGetAllParticipants,
-  handleGetParticipantStat,
-} from "../actions/participants";
-// import { useRecoilState } from "recoil";
+import { handleGetParticipantStat } from "../actions/participants";
 
 const Dashboard = () => {
   const { currentColor } = useStateContext();
-  const [participants, setParticipants] = useState(null);
   const [participantStat, setParticipantStat] = useState({});
   const [total, setTotal] = useState();
-
-  const fetchParticipants = useCallback(async () => {
-    const response = await handleGetAllParticipants({ page: 1, size: 20 });
-    setParticipants(response.data);
-  }, [handleGetAllParticipants]);
 
   const fetchParticipantsStat = useCallback(async () => {
     const response = await handleGetParticipantStat();
@@ -29,7 +18,6 @@ const Dashboard = () => {
   }, [handleGetParticipantStat]);
 
   useEffect(() => {
-    fetchParticipants();
     fetchParticipantsStat();
   }, []);
 
@@ -95,7 +83,7 @@ const Dashboard = () => {
           })}
         </div>
       </div>
-      <Participants participantsData={participants} />
+      <Participants />
     </div>
   );
 };

@@ -481,24 +481,24 @@ export const participantsGrid = [
     width: "100",
     textAlign: "Left",
   },
-  {
-    field: "gender",
-    headerText: "Gender",
-    width: "70",
-    textAlign: "Left",
-  },
+  // {
+  //   field: "gender",
+  //   headerText: "Gender",
+  //   width: "70",
+  //   textAlign: "Left",
+  // },
   {
     field: "schoolName",
     headerText: "School",
     width: "150",
     textAlign: "Left",
   },
-  {
-    field: "state",
-    headerText: "State",
-    width: "70",
-    textAlign: "Left",
-  },
+  // {
+  //   field: "state",
+  //   headerText: "State",
+  //   width: "70",
+  //   textAlign: "Left",
+  // },
   {
     field: "category",
     headerText: "Category",
@@ -511,12 +511,12 @@ export const participantsGrid = [
     width: "70",
     textAlign: "Left",
   },
-  {
-    field: "updatedAt",
-    headerText: "Date",
-    width: "100",
-    textAlign: "Left",
-  },
+  // {
+  //   field: "updatedAt",
+  //   headerText: "Date",
+  //   width: "100",
+  //   textAlign: "Left",
+  // },
 ];
 
 export const links = [

@@ -1,11 +1,13 @@
 const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
-const authentication = JSON.parse(localStorage.getItem("authentication"));
+// const authentication = JSON.parse(localStorage.getItem("authentication"));
 
-export const { token } = authentication.authentication;
+// const { token } = authentication?.authentication
+
+const token = localStorage.getItem("adminToken") || "";
 
 const customFetch = async (endpoint, options = {}) => {
-  if (!BASE_URL) {
+  if (!BASE_URL && !token) {
     console.error("BASE_URL is not defined in the environment variables.");
     return null;
   }
